@@ -405,12 +405,7 @@ h3 {
   background-size: cover;
   min-height: 75vh;
 }
-@media (min-width: 1000px) {
-  .article--bg-img {
-    min-height: 80vh;
-  }
-}
-@media (min-width: 500px) and (max-width: 721px) {
+@media (min-width: 500px) and (max-width: 660px) {
   .article--bg-img {
     min-height: 85vh;
   }
@@ -451,7 +446,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
 }
 
-@media (min-width: 721px) {
+@media (min-width: 660px) {
   .main-grid {
     grid-template-columns: 1fr 1fr;
   }

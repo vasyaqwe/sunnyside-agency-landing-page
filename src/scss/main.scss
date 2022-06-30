@@ -32,11 +32,7 @@
     background-size: cover;
     min-height: 75vh;
 
-    @media(min-width: 1000px) {
-        min-height: 80vh;
-    }
-
-    @media(min-width: 500px) and (max-width: 721px) {
+    @media(min-width: 500px) and (max-width: 660px) {
         min-height: 85vh;
     }
 
@@ -79,7 +75,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-@media(min-width: 721px) {
+@media(min-width: 660px) {
     .main-grid {
         grid-template-columns: 1fr 1fr;
     }
