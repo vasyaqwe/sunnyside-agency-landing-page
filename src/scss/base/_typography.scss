@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--ff-secondary);
+    font-weight: 900;
+
+}
+
+h1 {
+    margin-top: 6rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 2.4rem;
+    line-height: 1.3;
+
+    @media (min-width: 560px) {
+        margin-top: 2.5rem;
+
+    }
+}
+
+h2 {
+    color: var(--clr-neutral-600);
+
+    @media (min-width: 721px) {
+        font-size: clamp(0.8rem, 4vw, 3rem);
+    }
+}
+
+h3 {
+    font-size: 1.7rem;
+
+    @media (min-width: 721px) {
+        font-size: clamp(0.8rem, 4vw, 2rem);
+    }
+}

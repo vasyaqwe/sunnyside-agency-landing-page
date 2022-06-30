@@ -1,0 +1,42 @@
+@use '../base' as *;
+
+.header {
+    padding-top: clamp(2em, 2vw, 3em);
+    height: 85vh;
+    position: relative;
+
+
+    &__top {
+        width: 87.5%;
+
+        @media(min-width: 800px) {
+            width: min(90%, 90em);
+        }
+
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    background-image: url('../../images/mobile/image-header.jpg');
+    background-position: bottom;
+    background-size: cover;
+
+    @media (min-width: 560px) {
+        background-image: url('../../images/desktop/image-header.jpg');
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url('../../images/icon-arrow-down.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 69%;
+
+        @media (min-width: 560px) {
+            background-position: 50% 39%;
+        }
+    }
+}

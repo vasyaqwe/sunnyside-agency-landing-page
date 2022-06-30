@@ -1,0 +1,68 @@
+@use '../base' as *;
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+}
+
+.btn--contact {
+    font-family: var(--ff-secondary);
+    text-transform: uppercase;
+    background-color: var(--clr-yellow);
+    color: var(--clr-neutral-600);
+    padding: 1em 1.75em;
+    border-radius: 100vmax;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: var(--clr-light-blue);
+        color: #fff;
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+
+    @media(max-width: 800px) {
+        display: inline-block;
+    }
+
+    @media(min-width: 800px) {
+        background-color: #fff;
+    }
+}
+
+.btn--learnmore {
+    font-family: var(--ff-secondary);
+    text-transform: uppercase;
+    color: var(--clr-neutral-600);
+    position: relative;
+    font-size: clamp(0.9rem, 1.3vw, 2rem);
+
+    &::after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        inset: 17px -6px 0 -6px;
+        background-color: hsl(51, 100%, 75%);
+        transition: all 0.3s ease;
+
+    }
+
+    &:hover::after {
+        inset: 0 -6px 0 -6px;
+        background-color: var(--clr-yellow);
+    }
+}
+
+.btn--learnmore--red {
+    &::after {
+        background-color: hsl(7, 99%, 80%);
+    }
+
+    &:hover::after {
+        inset: 0 -6px 0 -6px;
+        background-color: var(--clr-red);
+    }
+}

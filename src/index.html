@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnyside Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.scss">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <img class="header__logo" src="../images/logo.svg" alt="sunnyside logo">
+            <button class="btn nav-toggle" aria-expanded="false"><img src="../images/icon-hamburger.svg"
+                    alt="hamburger icon"></button>
+            <nav class="nav primary-nav" data-visible="false">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Services</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Projects</a></li>
+                    <li class="nav__item"><button class="nav__link btn btn--contact" href="#">Contact</button></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>We are creatives</h1>
+    </header>
+    <main>
+        <div class="main-grid">
+            <article class="article article--transform">
+                <h2 class="article__heading">Transform your brand</h2>
+                <p class="article__p">We are a full-service creative agency specializing in helping brands grow fast.
+                    Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a class="btn btn--learnmore" href="#">Learn more</a>
+            </article>
+            <img src="../images/desktop/image-transform.jpg" class="egg-img" alt="egg on yellow background">
+            <img src="../images/desktop/image-stand-out.jpg" class="glass-img" alt="soft pink glass-formed shape">
+            <article class="article article--standout">
+                <h2 class="article__heading">Stand out to the right audience</h2>
+                <p class="article__p">Using a collaborative formula of designers, researchers, photographers,
+                    videographers, and copywriters, we’ll build and extend your brand in digital places </p>
+                <a class="btn btn--learnmore btn--learnmore--red" href="#">Learn more</a>
+            </article>
+            <article class="article article--bg-img article--bg-img--graphic">
+                <h3 class="article--bg-img__heading">Graphic Design</h3>
+                <p class="article--bg-img__p">Great design makes you memorable. We deliver artwork that underscores
+                    your brand message and captures
+                    potential clients’ attention.</p>
+            </article>
+            <article class="article article--bg-img article--bg-img--photography">
+                <h3 class="article--bg-img__heading">Photography</h3>
+                <p class="article--bg-img__p">Increase your credibility by getting the most stunning, high-quality
+                    photos that improve your business image.</p>
+            </article>
+        </div>
+        <section class="testimonials">
+            <h3 class="testimonials__heading">Client Testimonials</h3>
+            <div class="testimonials__container">
+                <article class="testimonial">
+                    <img class="testimonial__img" src="../images/image-emily.jpg" alt="woman">
+                    <p class="testimonial__p">We put our trust in Sunnyside and they delivered, making sure our needs
+                        were met and deadlines
+                        were always hit.</p>
+                    <div class="testimonial__by">
+                        <strong class="testimonial__by__name">Emily R.</strong>
+                        <small class="testimonial__by__position">Marketing Director</small>
+                    </div>
+                </article>
+                <article class="testimonial">
+                    <img class="testimonial__img" src="../images/image-thomas.jpg" alt="woman">
+                    <p class="testimonial__p">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+                        success made it a satisfying and enjoyable experience.</p>
+                    <div class="testimonial__by">
+                        <strong class="testimonial__by__name">Thomas S.</strong>
+                        <small class="testimonial__by__position">Chief Operating Officer</small>
+                    </div>
+                </article>
+                <article class="testimonial">
+                    <img class="testimonial__img" src="../images/image-jennie.jpg" alt="woman">
+                    <p class="testimonial__p">Incredible end result! Our sales increased over 400% when we worked with
+                        Sunnyside. Highly recommended!</p>
+                    <div class="testimonial__by">
+                        <strong class="testimonial__by__name">Jennie F.</strong>
+                        <small class="testimonial__by__position">Business Owner</small>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="gallery-grid">
+            <img src="../images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles" class="gallery-img">
+            <img src="../images/mobile/image-gallery-orange.jpg" alt="orange half" class="gallery-img">
+            <img src="../images/mobile/image-gallery-cone.jpg" alt="waffle cone" class="gallery-img">
+            <img src="../images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="gallery-img">
+        </section>
+    </main>
+    <footer class="footer">
+        <img class="footer__logo" src="../images/logo.svg" alt="sunnyside logo">
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Services</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Projects</a></li>
+        </ul>
+        <ul class="socials-list">
+            <img class="social__item" src="../images/icon-facebook.svg" alt="facebook icon">
+            <img class="social__item" src="../images/icon-instagram.svg" alt="instagram icon">
+            <img class="social__item" src="../images/icon-twitter.svg" alt="twitter icon">
+            <img class="social__item" src="../images/icon-pinterest.svg" alt="pinterest icon">
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

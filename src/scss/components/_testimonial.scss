@@ -1,0 +1,40 @@
+@use '../base' as *;
+
+.testimonial {
+    text-align: center;
+    color: var(--clr-neutral-500);
+    display: grid;
+    gap: 2rem;
+    padding: 2em;
+
+    @media(min-width: 721px) {
+        gap: 3rem;
+    }
+
+    &__img {
+        max-width: 60px;
+        border-radius: 100vmax;
+        margin-inline: auto;
+    }
+
+    &__p {
+        font-size: clamp(0.9rem, 1.2vw, 2rem);
+    }
+
+    &__by {
+        display: flex;
+        flex-direction: column;
+
+        &__name {
+            font-family: var(--ff-secondary);
+            color: var(--clr-neutral-600);
+            font-size: clamp(0.9rem, 1.2vw, 2rem);
+        }
+
+        &__position {
+            margin-top: 0.3rem;
+            color: var(--clr-neutral-300);
+            font-size: clamp(0.9rem, 1.1vw, 1.8rem);
+        }
+    }
+}
