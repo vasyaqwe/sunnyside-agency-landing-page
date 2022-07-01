@@ -196,6 +196,10 @@ h3 {
 }
 .nav__item {
   color: var(--clr-neutral-400);
+  border-bottom: 2px solid transparent;
+}
+.nav__item:hover {
+  border-bottom: 2px solid #fff;
 }
 .nav__list {
   text-align: center;
